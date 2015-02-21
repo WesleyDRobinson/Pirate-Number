@@ -1,0 +1,25 @@
+/* Custom styles */
+
+body{
+	background-color: #333333;
+}
+
+.pirate1 {
+	float: right;
+	max-width: 50%
+
+
+}
+
+.jumbotron, .input {
+	text-align: center;
+}
+
+.input {
+	text-align: center;
+	width: 50%;
+}
+
+.plank {
+	color: white;
+}

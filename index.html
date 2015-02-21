@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walk the Plank</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+ 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body >
+  <!-- Modals -->
+<div class="modal fade message">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <span class="display-message"></span>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default yaaargh" data-dismiss="modal">Yaaargh!</button>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <div class="container">
+
+      <!-- title -->
+      <div class="jumbotron">
+        <h1>You've been captured by pirates! <br> 
+        <small>Argh! Guess me number <span class="pirate-number"></span>or walk the plank.</small>
+        </h1>
+      </div>
+      
+      <img class="img-rounded pirate1 img-responsive" src="pictures/pirate1.jpg">
+            
+      <div class="">
+              <!-- input field-->
+        <form class="" id="guess">
+          <div class="input-group col-sm-6 col-md-offset-1">
+            <!-- <input type="text" class="" placeholder="Search for..."> -->
+            <input type="text" class="form-control input input-lg" id="prisoner-guess" placeholder="It's between 1-100. Guess Now!" autocomplete="off">
+                <span class="input-group-btn">
+                  <button class="btn btn-lg" id="prisoner-guess" type="button">Guess!</button>
+                </span>
+        </div>
+          
+        </form>
+
+        <!--  Hot or Cold // Up or Down -->
+        <div class="hot-cold">
+           <div class="not-close alert alert-success col-sm-6 col-md-offset-1 hidden" >HARHARHAR!! You're way off! <span class="higher-lower"></span></div>
+           <div class="closer alert alert-success col-sm-6 col-md-offset-1 hidden">HARHAR!! You're not too close. <span class="higher-lower"></span></div>
+           <div class="almost alert alert-success col-sm-6 col-md-offset-1 hidden">HAR!! Almost there... <span class="higher-lower"></span></div>
+           <div class="very-close alert alert-success col-sm-6 col-md-offset-1 hidden">Oh! Yer vaery nearly therr. <span class="higher-lower"></span></div>
+        </div>
+
+
+                    <!-- Tally and Display of Guesses -->
+        <div class=""> 
+          <h3 class="plank col-lg-6 col-sm-offset-1">Remaining plank: <span id="plank-steps-remaining">6</span> steps</h3>
+              <!-- progress bar maybe...
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+              </div>-->
+          <p class="plank col-lg-6 col-sm-offset-1">Yer guesses so far:  <span class="guess-array-display"></span></p>
+        </div>
+
+        <div class="btn-group btn-group-lg col-sm-6 col-sm-offset-1" role="group">          <!-- hint - give me the answer -->
+          <button type="button" class="btn btn-default answer"><span class="answer-text">Refuse to guess!</span></button>
+          <button type="button" class="btn btn-default reset">Beg for mercy.</button>
+        </div>
+                  
+      </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/guess-this.js"></script>
+  </body>
+</html>

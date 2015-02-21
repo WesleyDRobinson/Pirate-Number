@@ -1,2 +1,2 @@
-# Pirate-Number
-A simple guessing game project.
+# Guess-This
+Guessing game working on HTML/ CSS

@@ -1,19 +1,12 @@
-// Project Requirements:
 
-// Done - When a game begins, there should be a random number generated between 1-100.
 var pirateNumber = Math.floor(Math.random() * (101 - 1)) + 1;
 var plankSteps = 6;
 
-// Done - The user should have an input field where they can submit a guess.
 var prisonerGuess;
 var prisonerGuessArray = [];
 var reload = function () {
     location.reload()
 };
-
-// Done - After the user submits a guess, indicate whether their guess is 'hot' or 'cold'. Let the user know if they need to guess higher or lower.
-
-// Done -Must be HTML based (ie, .toggleClass() display:hidden or display:shown -- find Bootstrap div overlays)
 
 // function deciding high or low
 var highOrLow = function () {
@@ -29,7 +22,7 @@ var highOrLow = function () {
 
 // Done - function deciding how hot or cold.
 var hotOrCold = function () {
-    var difference = Math.abs(prisonerGuess - pirateNumber)
+    var difference = Math.abs(prisonerGuess - pirateNumber);
     if (difference > 40) {
         //.not-close
         $("div.not-close").removeClass('hidden').slideDown().delay(3500).slideUp(400);

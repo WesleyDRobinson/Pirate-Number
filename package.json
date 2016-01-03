@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/WesleyDRobinson/Pirate-Number/issues"
   },
-  "homepage": "https://github.com/WesleyDRobinson/Pirate-Number#readme",
-  "devDependencies": {
-    "babel-cli": "^6.3.17"
-  }
+  "homepage": "https://github.com/WesleyDRobinson/Pirate-Number#readme"
 }
